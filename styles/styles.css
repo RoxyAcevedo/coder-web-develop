@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "open sans";
+    background-color: #F2DAAC;
+    background-image: url(../imagenes/imagenes.jpg);
+}
+
+header {
+    background-color: #BF5630;
+    display:flex;
+    position: sticky;
+    top: 0px; 
+}
+
+.titulo /*titulo central*/{
+    display: flex;
+    justify-content: left;
+    color: #f3ece0;
+    width:30vw;
+}
+
+/* barra de navegacion de arriba*/ 
+.navegacion {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 70px;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navegacion ul li {
+    width: 100px;
+    display: flex;
+    color: #f3ece0;
+
+}
+
+/* banner de inicio*/
+.banner {
+    background-image: url(../Imagenes/banner.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.buttonContacto {
+    color: #BF5630;
+    font-weight: bold;
+    padding: 2vh;
+    background-color: rgb(203, 212, 209);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.banner h2 /*Empeza tu workout*/{
+    color: #f3ece0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*      imagenes de ilustracion            */
+
+.nuestrasActs {
+    font-size: 5vh;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    margin: 1rem;
+    color: #BF5630;
+}
+
+.cardImagen {
+    margin: 4vh;
+    background-color: #BF5630;
+    width: 65vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cardImagen p, a {
+    color: #f3ece0;
+}
+
+.button {
+    margin: 1vh;
+    background-color: #f3ece0;
+    color: #BF5630;
+    padding: 1vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    padding: 1rem;
+    width: 65vh;
+    height: 40vh;
+    
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #BF5630;
+    color: #f3ece0;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/**/
+

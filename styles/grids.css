@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "header"
+                        "banner"
+                        "barraContacto"
+                        "main"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 50vh 4rem auto auto;
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: rgb(248, 215, 215);
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.navegacion {
+   width: 60%; 
+}
+
+.navLista li a{
+    color: aliceblue;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: rgb(167, 89, 89);
+    text-decoration: none;
+}
+
+.navLista {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+/*                      banner          */
+.banner {
+    display: flex;
+    grid-area: banner;
+    background-image: url(../Imagenes/banner.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner h2 /*Empeza tu workout*/{
+    color: #f3ece0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.tituloBanner {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barraContacto {
+    background-color: rgb(240, 253, 255);
+}
+
+.cardContacto {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContacto {
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    color: #BF5630;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+/*           Imagenes de ilustracion              */
+
+
+
+.main /*contenedor de todas las imagenes*/{
+    display: flex;
+    grid-area: main;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f3ece0;
+}
+
+.card {
+     width: 50vh;
+     height: auto;
+     border: solid 1px;
+     border-radius: 15px;
+     margin: 1rem;
+     background-color: #c7795c;
+}
+
+.imagenesCard {
+    height: 50%;
+    width: 100%;
+}
+
+.imagenes{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+} 
+
+.button {
+    margin: 1vh;
+    background-color: #f3ece0;
+    color: #BF5630;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+/*        footer        */
+.footer {
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(248, 215, 215);
+    height: 3rem;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+/*   MEDIA QUERI  */
+
+@media (max-width: 1300px ) {
+    .navegacion {
+        display: none;
+    }
+}
+
