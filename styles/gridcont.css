@@ -41,6 +41,17 @@
     list-style: none;
 }
 
+.tituloHeader {
+    width: 170px;
+    height: 40px;
+    transform: translate();
+   
+    transition: 1s;
+ }
+ 
+ .tituloHeader:hover {
+     transform: rotate(-10deg);
+ }
 
 /*   BANNER CONTACTO   */
 
