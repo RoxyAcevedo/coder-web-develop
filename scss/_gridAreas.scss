@@ -1,0 +1,40 @@
+/*    GRID AREAS INDEX    */
+.contenedorIndex {
+    display: grid;
+    grid-template-areas: "header"
+                        "banner"
+                        "barraContacto"
+                        "main"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 7rem 50vh 4rem auto 7rem;
+}
+
+
+/* GRID AREAS ACTIVIDADES*/
+.contenedorAct { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 7rem 5rem 50vh 7rem;
+    grid-template-areas: "header" "header"
+                        "bannerTitulo" "bannerTitulo"
+                        "imagenAct" "descripcionAct"
+                        "footer" "footer";
+}
+
+/* GRID AREAS GALERIA*/
+
+
+/*GRID AREAS HISTORIA*/
+
+
+/* GRID  AREAS  CONTACTO*/
+.contenedorCont {
+    display: grid;
+    grid-template-areas: "header"
+                        "bannerTitulo"
+                        "formulario"
+                        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 7rem 5rem auto 7rem;
+}

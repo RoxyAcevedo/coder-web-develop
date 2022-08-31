@@ -1,0 +1,21 @@
+@import "variables";
+@import "generales";
+@import "imagenesindex";
+@import "navbar";
+@import "bannerIndex";
+@import "footer";
+@import "formulario";
+@import "gridAreas";
+
+
+* {
+    margin: 0%;
+}
+
+
+/*   MEDIA QUERI */ 
+@media (max-width: 1300px ) {
+    .navegacion {
+        display: none;
+    }
+}

@@ -1,0 +1,239 @@
+/*    Imagenes de ilustracion      */
+.main {
+  display: flex;
+  grid-area: main;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #f3ece0;
+  padding-top: 2%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 6%;
+}
+
+.card {
+  width: 60vh;
+  height: auto;
+  border: solid 1rem rgb(167, 89, 89);
+  border-radius: 4px;
+  margin: 2rem;
+  background-color: #f3ece0;
+}
+
+.imagenesCard {
+  height: 50%;
+  width: 100%;
+}
+
+.imagenes {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.button {
+  margin: 1vh;
+  background-color: rgb(248, 215, 215);
+  color: #BF5630;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.cuerpo p {
+  size: auto;
+  background-color: #f3ece0;
+  padding: 1rem;
+}
+.cuerpo a {
+  text-decoration: none;
+  margin: 0%;
+  padding: 4%;
+}
+.cuerpo a:hover {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* HEADER barra de nav */
+.header {
+  display: flex;
+  grid-area: header;
+  background-image: linear-gradient(to left, rgb(243, 243, 243), rgb(167, 89, 89));
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*trasformacion del titulo de barra de navegacion*/
+.tituloHeader {
+  width: 170px;
+  height: 40px;
+  transform: translate();
+  transition: 1s;
+}
+.tituloHeader:hover {
+  transform: rotate(-10deg);
+}
+
+/*lista de barra de navegacion*/
+.navLista {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.navLista li {
+  margin: 2rem;
+}
+.navLista li a {
+  color: aliceblue;
+  border-radius: 4px;
+  padding: 9px;
+  background-color: rgb(167, 89, 89);
+  text-decoration: none;
+}
+.navLista li a:hover {
+  color: #000;
+}
+
+.bannerTitulo {
+  display: flex;
+  grid-area: bannerTitulo;
+  background-color: #f8eedd;
+  align-items: center;
+  justify-content: center;
+}
+.bannerTitulo h2 {
+  color: rgb(167, 89, 89);
+  font-size: 160%;
+}
+
+/*  BANNER  INDEX*/
+.banner {
+  display: flex;
+  grid-area: banner;
+  background-image: url(../Imagenes/banner.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bannerCont {
+  display: flex;
+  grid-area: bannerCont;
+  background-color: #f8eedd;
+  color: #f8eedd;
+  align-items: center;
+  justify-content: center;
+  font-size: 160%;
+}
+
+.banner h2 {
+  color: #f3ece0;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.tituloBanner {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*  BARRA CONTACTO  */
+.barraContacto {
+  background-image: linear-gradient(rgb(243, 200, 200), #f3ece0);
+}
+
+.cardContacto {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cardContacto div a:hover {
+  color: #000;
+}
+
+.buttonContacto {
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+  color: #BF5630;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+/*   FOOTER        */
+.footer {
+  display: flex;
+  grid-area: footer;
+  background-color: rgb(90, 0, 0);
+  color: #f3ece0;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+/* Formulario contacto */
+form {
+  display: flex;
+  grid-area: formulario;
+  background-image: url(../Imagenes/banner.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+  color: #f8eedd;
+  padding-left: 3rem;
+  font-size: 120%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+}
+
+/*    GRID AREAS INDEX    */
+.contenedorIndex {
+  display: grid;
+  grid-template-areas: "header" "banner" "barraContacto" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 7rem 50vh 4rem auto 7rem;
+}
+
+/* GRID AREAS ACTIVIDADES*/
+.contenedorAct {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 7rem 5rem 50vh 7rem;
+  grid-template-areas: "header" "header" "bannerTitulo" "bannerTitulo" "imagenAct" "descripcionAct" "footer" "footer";
+}
+
+/* GRID AREAS GALERIA*/
+/*GRID AREAS HISTORIA*/
+/* GRID  AREAS  CONTACTO*/
+.contenedorCont {
+  display: grid;
+  grid-template-areas: "header" "bannerTitulo" "formulario" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 7rem 5rem auto 7rem;
+}
+
+* {
+  margin: 0%;
+}
+
+/*   MEDIA QUERI */
+@media (max-width: 1300px) {
+  .navegacion {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

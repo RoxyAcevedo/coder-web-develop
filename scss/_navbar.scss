@@ -1,0 +1,53 @@
+/* HEADER barra de nav */
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-image: linear-gradient( to left, rgb(243, 243, 243), rgb(167, 89, 89));
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*trasformacion del titulo de barra de navegacion*/
+.tituloHeader {
+    width: 170px;
+    height: 40px;
+    transform: translate();
+    transition: 1s;
+    &:hover {
+        transform: rotate(-10deg);
+    }
+}
+
+/*lista de barra de navegacion*/
+
+.navLista { 
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    li {
+        margin: 2rem;
+        a {
+            color: aliceblue;
+            border-radius: 4px;
+            padding: 9px;
+            background-color: $rosaoscuro;
+            text-decoration: none;
+            &:hover{
+                color: #000; 
+            }
+        }
+    }
+}
+
+.bannerTitulo {
+    display: flex;
+    grid-area: bannerTitulo;
+    background-color: #f8eedd;
+    align-items: center;
+    justify-content: center;
+    h2 {
+    color: rgb(167, 89, 89) ;
+    font-size: 160%;
+    }
+}
