@@ -12,15 +12,17 @@
 .bannerCont {
     display: flex;
     grid-area: bannerCont;
-    background-color: #f8eedd;
-    color:#f8eedd ;
+
+    background-color: $color-blanco;
+    color: $color-blanco;
+}
+    /*
     align-items: center;
     justify-content: center;
-    font-size: 160%;
-}
+    font-size: 160%; */ 
 
 .banner h2 /*Empeza tu workout*/{
-    color: #f3ece0;
+    color: $color-blanco;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -36,7 +38,7 @@
 
 /*  BARRA CONTACTO  */
 .barraContacto {
-    background-image: linear-gradient( rgb(243, 200, 200), #f3ece0 );
+    background-image: linear-gradient( $color-rosaclaro, $color-blanco);
 }
 
 .cardContacto {

@@ -1,0 +1,50 @@
+%botonNav {
+    border-radius: 4px;
+    padding: 9px;
+    background-color: $color-rosaoscuro;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+%encabezado {
+    background-color: $color-blanco;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+}
+
+%imagenesIndex {
+    .card {    
+        width: 60vh;
+        height: auto;
+        border: solid 1rem rgb(167, 89, 89);
+        border-radius: 4px ;
+        margin: 2rem;
+        background-color: rgb(167, 89, 89);
+            .imagenesCard {
+                height: 50%;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 6px 6px 0px 0px;
+                }
+            }
+            .cuerpo {
+                p {
+                    size:auto;
+                    background-color: rgb(243, 243, 243);
+                    padding: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    margin: 0%;
+                    padding: 4%;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+    }
+}
