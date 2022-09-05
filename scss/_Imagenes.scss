@@ -2,43 +2,112 @@
 .mainIndex {
     display: flex;
     grid-area: main;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    align-items: center;
     justify-content: space-around;
-    background-color: rgb(243, 243, 243);
+    background-color: $color-rosaclaro;
     padding-top: 2%; 
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 6%;
 }
 
-.card {    
-    @extend %imagenesIndex;
+.sectionIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-blanco;
+    
+    .card {   
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; /*no-wrap para Actividades*/
+        justify-content: space-around; 
+        width: 60vh;
+        height: auto;
+        border: solid 8px $color-rosaoscuro;
+        border-radius: 4px;
+        .imagenesCard {
+            height: 50%;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 6px 6px 0px 0px;
+            }
+        }
+        .cuerpo {
+            p {
+                size:auto;
+                padding: 1rem;
+            }
+            .button {
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
 }
 
-.button {
-    margin: 1vh;
-    background-color: rgb(248, 215, 215);
-    color: #BF5630;
-    padding: 1vh;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-} 
+.button1 {
+    @include botonesimgIndex ($color-boton: map-get($colors,celesteClaro));
+}
+
+.button2 {
+    @include botonesimgIndex ($color-boton: map-get($colors, celesteClaro2));
+}
+
+
 
 /*IMAGENES ACTIVIDADES*/
-.mainAct {
-    background-color: rgb(243, 243, 243);
-}
+.mainact {
+    display: flex;
+    grid-area: main;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-rosaclaro;
+    padding-top: 2%; 
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 6%;
+    h2 {
+        color: white;
+        background-color: $color-blanco;
+    }
+} 
 
 .sectionact {
-    border: 3px solid #BF5630 ;
-}
-
-.imagAct {
-    width: 20vw;
-    height: 20vh;
-    img {
-        width: 100%;
-        height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-blanco;
+    .cardact {   
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap; /*no-wrap para Actividades*/
+        justify-content: space-around; 
+        width: 60vh;
+        height: auto;
+        border: solid 8px $color-rosaoscuro;
+        border-radius: 4px;
+        .imagact {
+            height: 50%;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 6px 6px 0px 0px;
+            }
+        }
+        .cuerpoact {
+            p {
+                size:auto;
+                padding: 1rem;
+            }
+        }
     }
 }

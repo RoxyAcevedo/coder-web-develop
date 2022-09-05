@@ -20,7 +20,7 @@ html {
     display: grid;
     height: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 7rem 50vh auto 7rem;
+    grid-template-rows: 7rem auto auto 7rem;
     grid-template-areas: "header"
                         "bannerTitulo"
                         "mainAct"

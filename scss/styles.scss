@@ -1,12 +1,17 @@
+
+@import "variables";
+@import "extends";
+@import "mixins";
+
+@import "maps";
+
+@import "gridAreas";
 @import "navbar";
 @import "bannerIndex";
 @import "Imagenes";
 @import "footer";
 @import "formulario";
-@import "gridAreas";
-@import "extends";
-@import "variables";
-@import "maps";
+
 
 
 * {
