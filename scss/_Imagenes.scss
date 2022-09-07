@@ -52,11 +52,11 @@
 }
 
 .button1 {
-    @include botonesimgIndex ($color-boton: map-get($colors,celesteClaro));
+    @include botonesimgIndex ($color-boton: map-get($colors,celesteClaro), $colorletraboton: $color-rosaoscuro);
 }
 
 .button2 {
-    @include botonesimgIndex ($color-boton: map-get($colors, celesteClaro2));
+    @include botonesimgIndex ($color-boton: map-get($colors, celesteClaro2), $color-rosaoscuro);
 }
 
 
