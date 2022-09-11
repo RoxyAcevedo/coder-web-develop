@@ -1,7 +1,8 @@
-@mixin botonesimgIndex ($color-boton, $colorletraboton) {
+@mixin botonesimgIndex ($color-boton, $color-letraboton) {
     text-decoration: none;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem ;
     border-radius: 4px;
     background-color: $color-boton;
     color: $color-letraboton;
-}
+    
+}   
