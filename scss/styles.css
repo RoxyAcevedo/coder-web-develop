@@ -15,37 +15,6 @@
   height: 35px;
 }
 
-html {
-  height: 100%;
-}
-
-/*    GRID AREAS INDEX    */
-.contenedorIndex {
-  display: grid;
-  grid-template-areas: "header" "banner" "barraContacto" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 7rem 50vh 4rem auto 7rem;
-}
-
-/* GRID AREAS ACTIVIDADES*/
-.contenedorActs {
-  display: grid;
-  height: 100%;
-  grid-template-columns: 100%;
-  grid-template-rows: 7rem auto auto 7rem;
-  grid-template-areas: "header" "bannerTitulo" "mainAct" "footer";
-}
-
-/* GRID AREAS GALERIA*/
-/*GRID AREAS HISTORIA*/
-/* GRID  AREAS  CONTACTO*/
-.contenedorCont {
-  display: grid;
-  grid-template-areas: "header" "bannerTitulo" "formulario" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 7rem 5rem auto 7rem;
-}
-
 /* HEADER barra de nav */
 .header {
   display: flex;
@@ -133,11 +102,12 @@ html {
 
 /* BARRA comun p/las PAGES */
 .bannerTitulo {
-  background-image: linear-gradient(rgb(252, 230, 230), rgb(226, 222, 222));
+  background-image: linear-gradient(rgb(226, 222, 222), rgb(252, 230, 230));
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 5rem;
 }
 
 .cardContacto {
@@ -145,6 +115,7 @@ html {
   align-items: center;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(rgb(226, 222, 222), rgb(252, 230, 230));
 }
 .cardContacto div a:hover {
   color: #000;
@@ -163,7 +134,6 @@ html {
 /*    IMAGENES INDEX      */
 .mainIndex {
   display: flex;
-  grid-area: main;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -223,6 +193,98 @@ html {
   width: 40vh;
 }
 
+/*IMAGENES ACTIVIDADES*/
+.mainAct {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  background-color: rgb(252, 230, 230);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+.mainAct .sectionAct {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 35vh;
+  justify-content: space-around;
+  background-color: rgb(252, 230, 230);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.mainAct .sectionAct .cardAct {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  border: solid 2px rgb(90, 0, 0);
+  border-radius: 3px;
+  background-color: #c97a5d;
+  width: 80%;
+}
+.mainAct .sectionAct .cardAct .imagenesAct {
+  width: 30%;
+  height: 100%;
+}
+.mainAct .sectionAct .cardAct .imagenesAct .imgAct {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainAct .sectionAct .cardAct .cuerpoAct {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.mainAct .sectionAct .cardAct .cuerpoAct .tituloh3Act {
+  display: flex;
+  width: 100%;
+}
+.mainAct .sectionAct .cardAct .cuerpoAct p {
+  display: flex;
+}
+
+/*IMAGENES GALERIA*/
+.mainImg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(252, 230, 230);
+  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+.mainImg .sectionImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.mainImg .sectionImg .CardImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50vh;
+  height: 43vh;
+  border: solid 4px rgb(90, 0, 0);
+}
+.mainImg .sectionImg .CardImg .imagenenImg {
+  width: 100%;
+  height: 100%;
+}
+.mainImg .sectionImg .CardImg .imagenenImg .imgImg {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*ACA ESTA EL MIXIN Y EL MAP , que estan aplicados en las cards de imaganes del Index*/
 .button1 {
   text-decoration: none;
   padding: 1rem;
@@ -253,19 +315,6 @@ html {
   border-radius: 4px;
   background-color: rgb(28, 96, 105);
   color: #1d110d;
-}
-
-/*IMAGENES ACTIVIDADES*/
-.sectionAct {
-  background-color: rgb(252, 230, 230);
-}
-.sectionAct .cardAct .imagenesAct {
-  width: 70vw;
-  height: 30vh;
-}
-.sectionAct .cardAct .imagenesAct img {
-  width: 100%;
-  height: 100%;
 }
 
 /*   FOOTER        */

@@ -1,7 +1,6 @@
 /*    IMAGENES INDEX      */
 .mainIndex {
     display: flex;
-    grid-area: main;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: space-around;
@@ -11,7 +10,6 @@
     padding-right: 5rem;
     padding-bottom: 6%;
 }
-
 .sectionIndex {
     display: flex;
     flex-wrap: wrap;
@@ -60,34 +58,107 @@
     }
 }
 
-.button1 {
-    @include botonesimgIndex (map-get($colors, celesteClaro), $color-negro);
-}
-
-.button2 {
-    @include botonesimgIndex (map-get($colors, celesteClaro2), $color-negro);
-}
-
-.button3 {
-    @include botonesimgIndex (map-get($colors, celesteOscuro), $color-negro);
-}
-
-.button4 {
-    @include botonesimgIndex (map-get($colors, celesteOscuro2), $color-negro);
-}
-
 /*IMAGENES ACTIVIDADES*/
-
-.sectionAct {
+.mainAct {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    align-items: center;
     background-color: $color-rosaclaro;
-    .cardAct {
-        .imagenesAct {
-            width: 70vw;
-            height: 30vh;
-            img {
-                width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    .sectionAct {
+        display: flex; 
+        flex-wrap: wrap;
+        width: 100%;
+        height: 35vh;
+        justify-content: space-around;
+        background-color: $color-rosaclaro;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        .cardAct {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            border: solid 2px $color-bordo;
+            border-radius: 3px;
+            background-color: $color-marronclaro;
+            width: 80%;
+            .imagenesAct {
+                width: 30%;
                 height: 100%;
+                .imgAct {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .cuerpoAct {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 2rem;
+                .tituloh3Act {
+                    display: flex;
+                    width:100% ;
+                }
+                p {
+                    display: flex;
+                }
             }
         }
     }
+}
+
+/*IMAGENES GALERIA*/
+.mainImg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $color-rosaclaro;
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    .sectionImg {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        .CardImg {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 50vh;
+            height: 43vh;
+            border: solid 4px $color-bordo;
+            .imagenenImg {
+                width: 100%;
+                height: 100%;
+                .imgImg {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*ACA ESTA EL MIXIN Y EL MAP , que estan aplicados en las cards de imaganes del Index*/
+.button1 {
+    @include botonesimgIndex (map-get($colors, celesteClaro), $color-negro);
+}
+.button2 {
+    @include botonesimgIndex (map-get($colors, celesteClaro2), $color-negro);
+}
+.button3 {
+    @include botonesimgIndex (map-get($colors, celesteOscuro), $color-negro);
+}
+.button4 {
+    @include botonesimgIndex (map-get($colors, celesteOscuro2), $color-negro);
 }
